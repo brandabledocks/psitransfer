@@ -1,0 +1,23 @@
+{
+	"files": [
+		{
+			"from": "/app/public/pug/partials/footer.pug",
+			"to": "public/pug/partials/footer.pug"
+		},
+	],
+	"append": [
+		{
+			"from": "/app/public/asset/styles.css",
+			"to": "public/assets/styles/styles.css"
+		}
+	],
+	"replace": [
+		{
+			"search": "/\"adminPass\": false,/g",
+			"replace": "\"adminPass\": \"BRANDING_ADMIN_PASSWORD\",",
+			"in": [
+				"/app/config.js"
+			]
+		},
+	]
+}
